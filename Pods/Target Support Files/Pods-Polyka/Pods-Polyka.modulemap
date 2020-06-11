@@ -1,0 +1,6 @@
+framework module Pods_Polyka {
+  umbrella header "Pods-Polyka-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="k41-aq-C1c" kind="custom" identifier="sssw_front" customClass="SWRevealViewControllerSegueSetController" id="Whd-hZ-vPs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="97"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mJg-g4-SA5">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="iKR-XO-kcQ" customClass="v2ViewController" customModule="Polyka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MYZ-CG-isa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKp-ms-LoK">
+                                <rect key="frame" x="132.5" y="312.5" width="110.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gKp-ms-LoK" firstAttribute="centerY" secondItem="MYZ-CG-isa" secondAttribute="centerY" id="EaG-eT-8xT"/>
+                            <constraint firstItem="gKp-ms-LoK" firstAttribute="centerX" secondItem="MYZ-CG-isa" secondAttribute="centerX" id="GY4-ji-FtB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zRI-YS-a5N"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bn7-Y7-NbG"/>
+                    <connections>
+                        <segue destination="aMF-Ei-BXZ" kind="show" identifier="from2to3" id="ptU-tU-vGG"/>
+                        <segue destination="ktY-h7-IBu" kind="presentation" identifier="from2to1" id="mtF-Mv-9ZA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keu-V6-fJB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="1554"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="ApS-4X-0GL">
+            <objects>
+                <viewController id="k41-aq-C1c" customClass="yellowViewController" customModule="Polyka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dcg-Sx-ybP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-sm-gkG">
+                                <rect key="frame" x="16" y="20" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Sw8-IW-daO"/>
+                                    <constraint firstAttribute="height" constant="50" id="aqW-3P-1CV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="square.split.1x2" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Afg-sm-gkG" firstAttribute="top" secondItem="Z1j-BE-x1y" secondAttribute="top" constant="20" id="Vgv-Qn-qYf"/>
+                            <constraint firstItem="Afg-sm-gkG" firstAttribute="leading" secondItem="Z1j-BE-x1y" secondAttribute="leading" constant="16" id="ymJ-gO-UMS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z1j-BE-x1y"/>
+                    </view>
+                    <connections>
+                        <outlet property="btttn" destination="Afg-sm-gkG" id="G9y-VA-Aye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thC-H8-00h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="489"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="93e-sc-iQT">
+            <objects>
+                <viewController id="U56-c2-OM7" customClass="greenViewController" customModule="Polyka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mq9-to-xGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qQi-Av-PBf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1PD-Tg-QMr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9YM-Na-RkV">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="aMF-Ei-BXZ" customClass="v3ViewController" customModule="Polyka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ihi-pu-gc8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-xX-Vo2">
+                                <rect key="frame" x="132" y="312.5" width="111" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2RH-xX-Vo2" firstAttribute="centerY" secondItem="Ihi-pu-gc8" secondAttribute="centerY" id="pr1-F9-iiK"/>
+                            <constraint firstItem="2RH-xX-Vo2" firstAttribute="centerX" secondItem="Ihi-pu-gc8" secondAttribute="centerX" id="q3U-mU-jaT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wLN-GQ-zf0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="58g-Bi-FSw"/>
+                    <connections>
+                        <segue destination="rOE-IS-mJZ" kind="show" identifier="from3to4" id="ROC-Kn-50X"/>
+                        <segue destination="iKR-XO-kcQ" kind="show" identifier="from3to2" id="fT6-hi-4Kx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXC-Br-fty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="1554"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Aip-XY-Z2N">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="rOE-IS-mJZ" customClass="v4ViewController" customModule="Polyka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lcB-sW-d38">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF4-sA-uAZ">
+                                <rect key="frame" x="131.5" y="312.5" width="112" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aF4-sA-uAZ" firstAttribute="centerX" secondItem="lcB-sW-d38" secondAttribute="centerX" id="KgU-53-Syc"/>
+                            <constraint firstItem="aF4-sA-uAZ" firstAttribute="centerY" secondItem="lcB-sW-d38" secondAttribute="centerY" id="rcC-Js-zKk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nHF-cU-pqO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ER0-HO-dHz"/>
+                    <connections>
+                        <segue destination="aMF-Ei-BXZ" kind="show" identifier="from4to3" id="oCH-MC-Smr"/>
+                        <segue destination="ktY-h7-IBu" kind="show" identifier="from4to1" id="bWX-mu-mkx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZW-Fh-HfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="1554"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y2s-9p-HEc">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ktY-h7-IBu" customClass="v1ViewController" customModule="Polyka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zSM-wb-ybs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBu-Xd-E28">
+                                <rect key="frame" x="134.5" y="312.5" width="106" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MBu-Xd-E28" firstAttribute="centerY" secondItem="zSM-wb-ybs" secondAttribute="centerY" id="CVg-2q-sMb"/>
+                            <constraint firstItem="MBu-Xd-E28" firstAttribute="centerX" secondItem="zSM-wb-ybs" secondAttribute="centerX" id="kjq-2X-8md"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S6z-Ty-4D0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4ic-8d-Hls"/>
+                    <connections>
+                        <segue destination="iKR-XO-kcQ" kind="presentation" identifier="from1to2" modalTransitionStyle="partialCurl" id="ww4-Db-N2D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5P-Oe-PPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1070" y="1554"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.split.1x2" catalog="system" width="64" height="56"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mtF-Mv-9ZA"/>
+        <segue reference="ptU-tU-vGG"/>
+        <segue reference="ww4-Db-N2D"/>
+    </inferredMetricsTieBreakers>
+</document>
